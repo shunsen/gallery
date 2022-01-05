@@ -8,12 +8,12 @@ import 'package:flutter/material.dart';
 class MaterialDemoThemeData {
   static final themeData = ThemeData(
     colorScheme: _colorScheme,
-    appBarTheme: AppBarTheme(
-      color: _colorScheme.primary,
-      iconTheme: IconThemeData(color: _colorScheme.onPrimary),
+    appBarTheme: const AppBarTheme(
+      color: Color(0xFF6200EE),
+      iconTheme: IconThemeData(color: Colors.white),
     ),
-    bottomAppBarTheme: BottomAppBarTheme(
-      color: _colorScheme.primary,
+    bottomAppBarTheme: const BottomAppBarTheme(
+      color: Color(0xFF6200EE),
     ),
     canvasColor: _colorScheme.background,
     toggleableActiveColor: _colorScheme.primary,
@@ -32,9 +32,9 @@ class MaterialDemoThemeData {
 
   static const _colorScheme = ColorScheme(
     primary: Color(0xFF6200EE),
-    primaryContainer: Color(0xFF6200EE),
+    primaryVariant: Color(0xFF6200EE),
     secondary: Color(0xFFFF5722),
-    secondaryContainer: Color(0xFFFF5722),
+    secondaryVariant: Color(0xFFFF5722),
     background: Colors.white,
     surface: Color(0xFFF2F2F2),
     onBackground: Colors.black,
